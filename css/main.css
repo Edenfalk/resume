@@ -1,0 +1,149 @@
+:root {
+    --blue: #037F8C;
+    --darkblue: #013A40;
+    --lightblue: #7ED0D9;
+    --green: #03A696;
+    --orange: #D99962;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--darkblue);
+    font-family: var(--sans);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: o;
+}
+
+a {
+    color: var(--lightblue);
+}
+
+a:hover {
+    color: var(--blue) ;
+    text-decoration: none;
+}
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--lightblue);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 2rem;
+}
+
+#contact {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-color: var(--green);
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav [class*="fa"] {
+    font-size: 150%;
+    color: var(--lightblue);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover, nav [class*="fa"]:hover {
+    color: var(--orange);
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+    
+}
+
+.button-resume {
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid var(--blue)
+}
+
+.button-resume:hover {
+    color: var(--lightblue);
+}
+
+@media (min-width: 650px) {
+
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+
+
+}
