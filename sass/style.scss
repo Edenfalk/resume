@@ -105,11 +105,13 @@ a:hover {
     padding: 4rem 1rem 9rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
-}
 
-#intro p {
-    font-size: 1rem;
-    line-height: 1.5;
+     p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+
 }
 
 #intro .name {
@@ -127,9 +129,16 @@ a:hover {
     font-size: 2rem;
 }
 
+#knowledge {
+    /* background-color: var(--blue); */
+    padding: 0;
+    margin: 0;
+}
+
 #knowledge p:first-child{
     font-size: 80%;
     text-align: center;
+    margin-top: 0;
 }
 
 #knowledge ul {
@@ -137,6 +146,7 @@ a:hover {
     justify-content: center;
     gap: 3rem;
     padding: 0;
+    margin-bottom: 0;
 }
 
 #contact {
