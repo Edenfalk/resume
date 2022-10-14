@@ -102,35 +102,75 @@ a:hover {
 }
 
 #intro {
-    padding: 4rem 1rem 3rem 1rem;
-    max-width: 1400px;
+    padding-bottom: 300px;
+}
+
+.intro-wrapper{
+    padding: 4rem 1rem 2rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
 
      p {
         font-size: 1rem;
         line-height: 1.5;
+        font-family: var(--mono);
     }
     
+}
+
+.image-button {
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .intro-image {
     width: 300px;
     height: 300px;
-    margin:0 auto;
     padding: 0 1rem 1rem 1rem;
     border-radius: 100%;
     display: flex;
-    filter: sepia(70%)
+    margin: 5rem auto 2rem;
+}
+
+#contact-button {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    text-align: center;
+    font-family: var(--mono);
+    color: var(--orange);
+    border-radius: 5px;
+    padding: 3px;
+    background-color: var(--darkblue);
+    box-shadow: 1px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.card {
+    width: 400px;
+    height: 185px;
+    border: 5px solid var(--orange);
+    margin: 2rem auto;
+    padding-top: 20px;
 }
 
 .about {
-  font-size: 80%; 
+  font-size: 65%; 
   width: 300px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  max-width: 1200px;
-  padding-left: 1rem;
+  margin: 0 auto;
+}
+
+.edu-card {
+    padding: 0 0 0 20px;
+    font-size: 70%;
+    font-family: var(--mono);
 }
 
 .about span:first-child {
@@ -146,10 +186,6 @@ a:hover {
 }
 
 
-#intro .name {
-    font-family: var(--mono);
-}
-
 .name span {
     font-family: var(--sans);
     font-size: 4rem;
@@ -160,53 +196,6 @@ a:hover {
 #intro h2 {
     font-size: 2rem;
 }
-
-#knowledge {
-    padding: 0;
-    margin: 0 auto;
-    background-color: var(--blue);
-}
-
-#knowledge p:first-child{
-    font-family: var(--mono);
-    padding: 1rem 0 1rem 0;
-    margin: 0 auto;
-    font-size: 80%;
-    text-align: center;
-    max-width: 1200px;
-}
-
-#knowledge ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 3rem;
-    padding: 0 0 1rem 0;
-    margin: 0 auto;
-    font-size: 200%;
-    color: var(--orange);
-    max-width: 1200px;
-}
-
-#contact {
-    width: 300px;
-    height: 300px;
-    margin: 2rem auto;
-    padding: 3rem ;
-    background-color: var(--green);
-    background-image: url(/images/resume-1.JPG);
-    filter: sepia(70%) ;
-    background-size: cover;
-    background-position: center;
-    // border-radius: 100%;
-    font-family: var(--mono);
-
-}
-
-#contact p:last-child {
-    margin-top: 3rem;
-}
-
 
 
 footer {
@@ -235,6 +224,7 @@ footer ul {
     nav {
         max-width: 1200px;
         margin: 0 auto;
+        
     }
 
     nav li:first-child {
@@ -246,14 +236,15 @@ footer ul {
     .intro-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin: 0 auto;
+        justify-content: space-between;
+        padding-bottom: 10rem;
     }
 
-
-
-
+    .wrapper-about-edu {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
 
 }
 
