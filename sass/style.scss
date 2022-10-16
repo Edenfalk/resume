@@ -30,7 +30,7 @@ body {
 }
 
 h1, h2, h3 {
-    margin: o;
+    margin: 0;
 }
 
 nav {
@@ -101,10 +101,6 @@ a:hover {
     height: 4px;
 }
 
-#intro {
-    padding-bottom: 300px;
-}
-
 .intro-wrapper{
     padding: 4rem 1rem 2rem 1rem;
     max-width: 1200px;
@@ -118,73 +114,9 @@ a:hover {
     
 }
 
-.image-button {
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+.intro-text {
+    max-width: 800px;
 }
-
-.intro-image {
-    width: 300px;
-    height: 300px;
-    padding: 0 1rem 1rem 1rem;
-    border-radius: 100%;
-    display: flex;
-    margin: 5rem auto 2rem;
-}
-
-#contact-button {
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    text-align: center;
-    font-family: var(--mono);
-    color: var(--orange);
-    border-radius: 5px;
-    padding: 3px;
-    background-color: var(--darkblue);
-    box-shadow: 1px;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-.card {
-    width: 400px;
-    height: 185px;
-    border: 5px solid var(--orange);
-    margin: 2rem auto;
-    padding-top: 20px;
-}
-
-.about {
-  font-size: 65%; 
-  width: 300px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.edu-card {
-    padding: 0 0 0 20px;
-    font-size: 70%;
-    font-family: var(--mono);
-}
-
-.about span:first-child {
-    font-family: var(--mono);
-}
-
-.about i {
-    color: var(--orange);
-}
-
-.about-last {
-    padding-bottom: 2rem;
-}
-
 
 .name span {
     font-family: var(--sans);
@@ -197,13 +129,77 @@ a:hover {
     font-size: 2rem;
 }
 
+.image-button {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+}
+
+.intro-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.contact-btn {
+    position: absolute;
+    width: 200px;
+    top: 65%;
+    left: 15%;
+    text-align: center;
+    font-family: var(--mono);
+    color: var(--orange);
+    border-radius: 5px;
+    padding: 7px;
+    background-color: var(--white);
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.card {
+    width: 400px;
+    height: 185px;
+    border: 5px solid var(--lightblue);
+    margin: 2rem auto;
+    padding-top: 20px;
+    font-family: var(--mono);
+}
+
+.skills {
+  font-size: 70%; 
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.txt-card {
+    padding:0 25px;
+    font-size: 70%;
+    font-family: var(--mono);
+}
+
+.skills span:first-child {
+    font-family: var(--mono);
+}
+
+.skills i {
+    color: var(--lightblue);
+}
+
 
 footer {
     text-align: center;
     background-color: var(--blue);
+    font-family: var(--mono)
 }
 
-footer h2 {
+footer h4 {
     padding-top: 5rem;
 }
 
@@ -237,17 +233,12 @@ footer ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 10rem;
+        padding: 4rem 1rem 10rem 1rem;
     }
 
     .wrapper-about-edu {
         display: flex;
-        justify-content: space-evenly;
         gap: 10px;
     }
-
-}
-
-@media (min-width: 1100px) {
 
 }
